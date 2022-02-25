@@ -1,0 +1,36 @@
+<svg
+  width="309"
+  height="196"
+  viewBox="0 0 309 196"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+<rect width="309" height="196" rx="8" fill="#7A7786" />
+<rect
+    opacity="0.4"
+    x="29"
+    y="21"
+    width="80"
+    height="54"
+    rx="12"
+    fill="#ACABB7"
+  />
+<rect
+    opacity="0.4"
+    x="29"
+    y="124"
+    width="234"
+    height="8"
+    rx="4"
+    fill="#ACABB7"
+  />
+<rect
+    opacity="0.4"
+    x="29"
+    y="141"
+    width="185"
+    height="8"
+    rx="4"
+    fill="#ACABB7"
+  />
+</svg>

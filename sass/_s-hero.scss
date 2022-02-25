@@ -1,0 +1,188 @@
+
+.s-hero{
+    background: radial-gradient(circle at 3% 25%,#60302b 0,#040c18 25%);
+    // padding-top: 72px ;{
+
+    .icon-arrowDown{
+        margin: 0 auto;
+        padding-bottom: $gutter*2;
+    }
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 10%;
+        z-index: 0;
+    }
+    .s-hero__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: calc(100vh - 72px);
+        .tag-free{
+            margin-top: $gutter*8;
+            color: $yellow;
+            text-transform: uppercase;
+            background-color: #00000063;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 50px;
+        }
+        ul{
+            max-width: 597px;
+            display: flex;
+            justify-content: space-between;
+            margin-top:$gutter*6;
+            margin-bottom: $gutter*12;
+            color: $white;
+
+            li{
+                img{
+               
+                     &:last-child{
+                        margin-top: 15px;
+                     }
+                }
+                span{
+                    max-width: 166px;
+                    font-size: 1.6rem;
+                    line-height: 24px;
+                }
+                
+            }
+        }
+        .s-hero__col--1{
+            max-width: 674px;
+            z-index: 1;
+            h1{
+                color: $white;
+                font-size: 6rem;
+                line-height: 70px;
+                margin-bottom: $gutter;
+            }
+            p{
+                font-size: 1.6rem;
+                line-height: 26px;
+                font-weight: 300;
+                color: $gray-light;
+                max-width: 611px;    
+            }
+            li{
+                width: 32%;
+                background-color: #0c1f3c;
+                padding: 15px;
+                border-radius: 15px;
+                gap:$gutter;
+                .s-hero__card{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                p{
+                    color: #00F4C8;
+                    // background-color: #00f4c852;
+                    background-color: #081324;
+                    padding: 0 11px;
+                    border-radius: 50px;
+                    font-size: 1.4rem;
+                }
+            }
+ 
+            .s-hero__btn{
+                margin-top: 55px;
+            }
+        }
+        .s-hero__col--2{
+            z-index: 1;
+            img{
+                width: 100%;
+            }
+            h3{
+                color: $gray-dark;
+                font-weight: bold;
+                font-size: 1.8rem;
+                margin-top: $gutter*4;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@include responsive(800px){
+    .s-hero{
+        .s-hero__row{
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: ($gutter*15) 0;
+            height: auto;
+            .tag-free_center{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .tag-free{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+                margin-bottom: $gutter;
+            }
+            .s-hero__col--1{
+                width: 100%;
+                margin-right: 0;
+                .hidden-mb{
+                    display: none;
+                }
+                .btn{
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 auto;
+                }
+                p{
+                    margin: 20px;
+                    text-align: center;
+                }
+                h1{
+                    font-size: 3.4rem;
+                    line-height: 33px;
+                    margin-top: 0;
+                    text-align: center;
+                }
+                ul{
+                    flex-direction: row;
+                    margin-top: $gutter*4;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin: $gutter 0;
+                        width: 48%;
+                        padding: $gutter;
+                        p{
+                            margin: 0;
+                        }
+                        img{
+                            margin: 0;
+                        }
+                        span{
+                            max-width: 100%;
+                        }
+                    }
+                }
+                .s-hero__card{
+                    width: 100%;
+                }
+
+            }
+            .s-hero__col--2{
+                margin-top: 0;
+            }
+        }
+    }
+ }

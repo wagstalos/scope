@@ -1,0 +1,102 @@
+.s-resources{
+    margin-top: $gutter*8;
+    .text-lead{
+        font-size: 1.6rem;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: $gutter *4;
+        color: $gray;
+        text-align: center;
+
+    }
+    .s-resources__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 150%;
+            color: $gray-200;
+            background-color: $gray-light;
+            padding: 0 10px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            &::before{
+                content:  url('./../img/json.svg');
+                margin-right: 8px;
+                padding-top: 5px;
+            }
+        }
+    }
+    h2{
+        max-width: 550px;
+        font-size: 3.2rem;
+        color: $gray-dark;
+        span{
+            color: $yellow;
+        }
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        li{
+            padding: $gutter;
+            width: 45%;
+            margin: $gutter;
+            transition: all .3s;
+            border-radius: 4px;
+            padding-bottom: $gutter*2;
+        
+            &:hover{
+                background-color: $gray-light;
+            }
+            h3{
+                font-size: 1.6rem;
+                margin-top: $gutter*2;
+            }
+            p{
+                font-size: 1.5rem;
+                color: $gray-200;
+                margin-top: $gutter;
+            }
+            img{
+                width: 50px;
+                background-color: #fcfcfc;
+                padding: 10px;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+@include responsive(800px){
+    .s-resources{
+        .s-resources__top{
+flex-direction: column-reverse;
+        }
+        h2{
+            max-width: 100%;
+            text-align: center;
+            margin-top: $gutter*2;
+        }
+        ul{
+            flex-direction: column;
+            li{
+                margin: 0;
+                width: 100%;
+                margin-bottom: $gutter;
+                text-align: center;
+                p{
+                    max-width: 100%;
+                }
+                img{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

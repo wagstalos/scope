@@ -1,0 +1,17 @@
+.btn{
+    padding: 17px 50px;
+    color: $black;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.btn__primary{
+    background-color: $yellow;
+    transition: all .5s;
+    &:hover{
+        background-color: $yellow-light;
+        color: $yellow;
+    }
+}

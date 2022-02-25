@@ -1,0 +1,77 @@
+footer{
+    padding-top: $gutter*8;
+    background-color: $gray-dark;
+    border-top: 5px solid $yellow;
+    color: $white;
+    // text-align: center;
+    a{
+        color: $white;
+    }
+    h3{
+        font-size: 2.2rem;
+        color: $yellow;
+        margin-bottom: $gutter*2;
+    }
+    h4{
+        font-size: 1.8rem;
+        margin-top: $gutter*2;
+        margin-bottom: $gutter*2;
+    }
+    .d-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contacts{
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        img{
+            margin-right: $gutter;
+        }
+    }
+    p{
+        font-size: 1.4rem;
+    }
+    .float {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px rgba(66, 66, 66, .5);
+        z-index: 100;
+    }
+    
+    .my-float {
+        margin: $gutter;
+    }
+    .wps-games{
+        padding: $gutter*2;
+        text-align: center;
+        background-color: $blue-dark;
+        margin-top: $gutter*5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            margin: $gutter;
+        }
+        img{
+            margin: 0 auto;
+        }
+    }
+}
+
+
+@include responsive(800px){
+    footer{
+        .d-flex{
+            flex-direction: column;
+        }
+    }
+}

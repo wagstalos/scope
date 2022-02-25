@@ -1,0 +1,75 @@
+.s-brand{
+  margin-top: $gutter*8;
+    margin-bottom: $gutter*8;
+    h2{
+      font-size: 3.2rem;
+      color: $gray-dark;
+      text-align: center;
+      margin-bottom: $gutter*4;
+      text-align: center;
+      span{
+        color: $yellow;
+      }
+    }
+
+    .s-brand__logos{
+        display: flex;
+        img{
+            margin-right: 79px;
+        }
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+        padding: 20px 0 40px 0;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-pagination {
+        position: relative;
+        width: 80px;
+        bottom: -20px!important;
+        .swiper-pagination-bullet {
+           background: $yellow;
+           opacity: 0.3;
+           border-radius: 12px;
+           transition: all 0.3s;
+           &-active {
+              opacity: 1;
+              width: 17.23px;
+           }
+        }
+     }
+
+}
+
+@include responsive(800px){
+  .s-brand{
+    h2{
+      font-size: 2.6rem;
+    }
+  }
+}

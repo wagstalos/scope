@@ -1,0 +1,38 @@
+.s-scope{
+    background-color: $yellow;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 20px;
+    margin: 50px;
+
+    img{
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 2.6rem;
+        color: $white;
+        margin-top: $gutter*2;
+    }
+    p{
+        font-size: 1.6rem;
+        color: $gray-dark;
+        margin-top: $gutter*3;
+        line-height: 26px;
+    }
+    .bg-white{
+        margin-top: $gutter*2;
+        background-color: $white;
+        display: inline-flex;
+    align-items: center;
+        &:before{
+            content:  url('./../img/Message.svg');
+            margin-right: $gutter;
+        }
+    }
+}
+
+@include responsive(800px){
+    .s-scope{
+        margin: 10px;
+    }
+}
